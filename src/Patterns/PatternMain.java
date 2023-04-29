@@ -8,6 +8,8 @@ public class PatternMain {
         // p.Pattern3(4);
         //p.Pattern4(4);
         //p.Pattern5(5);
-        p.Pattern6(5);
+        //p.Pattern6(5);
+        //p.Pattern7(5);
+        p.Pattern8(5);
     }
 }

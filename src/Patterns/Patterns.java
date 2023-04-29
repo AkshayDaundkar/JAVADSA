@@ -70,13 +70,14 @@ package Patterns;
 ////        1
 
 //        31
-//        4 4 4 4 4 4 4
+//         4 4 4 4 4 4 4
 //         4 3 3 3 3 3 4
 //         4 3 2 2 2 3 4
 //         4 3 2 1 2 3 4
 //         4 3 2 2 2 3 4
 //         4 3 3 3 3 3 4
 //         4 4 4 4 4 4 4
+
 public class Patterns {
 
     public void Pattern1(int value) {
@@ -88,62 +89,102 @@ public class Patterns {
         }
     }
 
-    public void Pattern2(int value)
-    {
+    public void Pattern2(int value) {
         for (int i = 0; i < value; i++) {
-            for (int j = 0; j <=i ; j++) {
-                System.out.print("*"+ " ");
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*" + " ");
             }
             System.out.println(" ");
         }
     }
 
-    public void Pattern3(int value)
-    {
+    public void Pattern3(int value) {
         for (int i = 0; i < value; i++) {
-            for (int j = 0; j < value-i ; j++) {
+            for (int j = 0; j < value - i; j++) {
                 System.out.print("*");
             }
             System.out.println(" ");
         }
     }
 
-    public void Pattern4(int value)
-    {
+    public void Pattern4(int value) {
         for (int i = 1; i <= value; i++) {
-            for (int j = 1; j <=i ; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println(" ");
         }
     }
 
-    public void Pattern5(int value)
-    {
-        for (int i = 1; i < 2*value; i++) {
-            int totalcols = i>value ? 2*value-i:i;
-            for (int j = 1; j <= totalcols ; j++) {
+    public void Pattern5(int value) {
+        for (int i = 1; i < 2 * value; i++) {
+            int totalcols = i > value ? 2 * value - i : i;
+            for (int j = 1; j <= totalcols; j++) {
                 System.out.print("*");
             }
             System.out.println(" ");
         }
     }
 
-    public void Pattern6(int value)
-    {
-        for (int i = 1; i < 2*value; i++) {
-            int totalcols = i>value ? 2*value-i:i;
+    public void Pattern6(int value) {
+        for (int i = 1; i < 2 * value; i++) {
+            int totalcols = i > value ? 2 * value - i : i;
 
-            int noofspaces=value-totalcols;
+            int noofspaces = value - totalcols;
             for (int s = 0; s < noofspaces; s++) {
                 System.out.print(" ");
             }
 
-            for (int j = 1; j <= totalcols ; j++) {
+            for (int j = 1; j <= totalcols; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
     }
+
+    public void Pattern7(int n) {
+
+          for (int row = 1; row <= n; row++) {
+
+            //spaces
+            for (int noofSpaces = 0; noofSpaces < n - row; noofSpaces++) {
+                System.out.print("  ");
+            }
+
+            for (int col = row; col >= 1; col--) { //row no pasun 1 parent
+                System.out.print(col + " ");
+            }
+
+            for (int col = 2; col <= row; col++) { //1 pasun row no parent
+                System.out.print(col + " ");
+            }
+            System.out.println();
+
+        }
+    }
+
+    public void Pattern8(int n) {
+
+        for (int row = 1; row <= 2 * n; row++) {
+
+            int c = row > n ? 2 * n - row : row;
+
+            //spaces
+            for (int noofSpaces = 0; noofSpaces < n - c; noofSpaces++) {
+                System.out.print("  ");
+            }
+
+            for (int col = c; col >= 1; col--) { //row no pasun 1 parent
+                System.out.print(col + " ");
+            }
+
+            for (int col = 2; col <= c; col++) { //1 pasun row no parent
+                System.out.print(col + " ");
+            }
+            System.out.println();
+
+        }
+    }
+
 
 }

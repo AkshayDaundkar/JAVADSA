@@ -17,6 +17,12 @@ public class SingleDimensionArray {
         Arr = new int[n];
         Arrays.fill(Arr, Integer.MIN_VALUE);
     }
+    //print
+    public void print()
+    {
+        System.out.print(Arrays.toString(Arr));
+    }
+
     //Insertion
 
     public void insert(int location, int value) {

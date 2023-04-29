@@ -13,6 +13,7 @@ public class SingleMain {
         A.delete(20);
         A.traversing();
         A.searchInArray(20);
+        A.print();
     }
 
 }
