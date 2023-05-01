@@ -103,10 +103,10 @@ public class ArrayListExample {
 
     public static void main(String[] args) {
         //creation 0(1)
-        //AddElementsinArrayList(); //element 0(1) index 0(n)
-        //AccessElementArrayList();
-        //TraverseArraylist();
-        //SearchArrayList(); 0(n)
-        //delete(); 0(n)
+        AddElementsinArrayList(); //element 0(1) index 0(n)
+        AccessElementArrayList();
+        TraverseArraylist();
+        SearchArrayList(); //0(n)
+        delete(); //0(n)
     }
 }
