@@ -1,6 +1,6 @@
 package Strings;
 
-public class StringExamples {
+public class StringFunctions {
     public static void main(String[] args) {
         String a="shivani";
         String b ="Akshay";

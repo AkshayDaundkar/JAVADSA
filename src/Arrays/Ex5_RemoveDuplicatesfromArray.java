@@ -17,6 +17,7 @@ public class Ex5_RemoveDuplicatesfromArray {
                     break;
                 }
             }
+
             if (!isDuplicate) {
                 uniqueArray[index++] = array[i];
             }
