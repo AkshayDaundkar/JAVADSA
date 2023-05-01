@@ -10,7 +10,8 @@ public class Ex7_maxProfit {
         for (int price : prices) {
             if (price < minPrice) {
                 minPrice = price;
-            } else if (price - minPrice > maxProfit) {
+            }
+            else if (price - minPrice > maxProfit) {
                 maxProfit = price - minPrice;
             }
         }
