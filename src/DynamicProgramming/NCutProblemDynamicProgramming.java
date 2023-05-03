@@ -1,4 +1,4 @@
-package Recursion;
+package DynamicProgramming;
 
 import java.util.Arrays;
 
@@ -91,3 +91,4 @@ public class NCutProblemDynamicProgramming {
         System.out.println("Bottom Up solution " + max(0, bottomupsol));
     }
 }
+
