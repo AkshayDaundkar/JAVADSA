@@ -39,7 +39,7 @@ public class Baseball_Stack {
         Stack<String> operations = new Stack<>();
 //        /["5","2","C","D","+"]
         //["5","-2","4","C","D","9","+","+"]
-        operations.push("6");
+        operations.push("5");
         operations.push("-2");
         operations.push("4");
         operations.push("C");
