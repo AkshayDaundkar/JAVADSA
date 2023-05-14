@@ -26,7 +26,7 @@ public class RealLifeProject {
 
         int noofDays=0;
         for (int i = 0; i < temp.length; i++) {
-            if(temp[i]>Avg)
+            if(temp[i] >Avg)
                 noofDays+=1;
         }
         System.out.println("There are "+noofDays+" Days Above Average temprrature");
