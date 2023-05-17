@@ -1,4 +1,4 @@
-package LimkedList;
+package LinkedList;
 
 public class SingleLinkedList {
 

@@ -1,4 +1,4 @@
-package LimkedList.practice;
+package LinkedList.practice;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +9,9 @@ public class Main {
         ll.addFirst(5);
         System.out.println( ll.Indexof(10));
         System.out.println(ll.contains(10));
+
+        ll.deleteFirst();
+        ll.deleteLast();
 
     }
 }

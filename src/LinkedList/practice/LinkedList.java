@@ -1,6 +1,6 @@
-package LimkedList.practice;
+package LinkedList.practice;
 
-import Patterns.Patterns;
+import java.util.NoSuchElementException;
 
 public class LinkedList {
     private class Node {
@@ -18,6 +18,17 @@ public class LinkedList {
     //isEmpty
     private boolean isEmpty() {
         return first == null;
+    }
+
+    //getPrevious
+    private Node getPrevious(Node node) {
+        var current = first;
+        while (current != null) {
+            if (current.next == node)
+                return current;
+            current = current.next;
+        }
+        return null;
     }
 
     //addLast
@@ -55,13 +66,36 @@ public class LinkedList {
         return -1;
     }
 
-    public boolean contains(int element)
-    {
-       return Indexof(element) !=-1;
+    public boolean contains(int element) {
+        return Indexof(element) != -1;
     }
     //deleteFirst
+
+    public void deleteFirst() {
+        if (isEmpty())
+            throw new NoSuchElementException();
+        if (first == last) {
+            first = last = null;
+        }
+        var second = first.next;
+        first.next = null;
+        first = second;
+    }
+
     //deleteLast
-    //contains
-    //indexOf
+    public void deleteLast() {
+        if (isEmpty())
+            throw new NoSuchElementException();
+
+        if (first == last) {
+            first = last = null;
+            return;
+        }
+        var previous=getPrevious(last);
+        last=previous;
+        last.next=null;
+
+    }
 
 }
+
